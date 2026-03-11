@@ -14,17 +14,21 @@
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#youtube">YouTube</a></li>
             <li><a href="#contact" class="btn-contact">Contact</a></li>
         </ul>
     </nav>
 
-    <header id="about">
-        <div class="hero">
+    <header id="about" class="hero-section">
+        <div class="container">
             <img src="assets/images/profile.png" alt="Rishi Singh" class="profile-img">
-            <h1>Hi, I'm Rishi Singh</h1>
-            <p class="tagline">Founder of <span>Rivise Institute</span> | AI & Data Science Educator</p>
-            <p class="bio">I simplify complex AI and Data Science concepts for beginners. Based in Varanasi, I help students build practical skills through project-based learning.</p>
+            <h1>Hi, I'm <span class="highlight">Rishi Singh</span></h1>
+            <p class="tagline">Founder of <strong>Rivise Institute</strong> | Data Science Educator</p>
+            <p class="bio">
+                Expert AI and Data Science educator. I specialize in Python, Power BI, and Machine Learning, 
+                helping students bridge the gap between academic learning and industry requirements.
+            </p>
             <div class="hero-btns">
                 <a href="assets/docs/rishi-resume.pdf" class="btn-primary" target="_blank">Download Resume</a>
                 <a href="https://github.com/Rishi-Singh-11" target="_blank" class="btn-secondary">GitHub Profile</a>
@@ -33,37 +37,101 @@
     </header>
 
     <section id="experience">
-        <h2 class="section-title">Professional Journey</h2>
-        <div class="timeline">
-            <div class="exp-item">
-                <h3>Founder & Instructor</h3>
-                <p class="company">Rivise Institute, Varanasi | 2025 - Present</p>
-                <p>Leading Python and AI training programs for students via offline and online modes.</p>
+        <div class="container">
+            <h2 class="section-title">Professional Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Founder & Instructor</h3>
+                    <p class="organization">Rivise Institute, Varanasi | Mar 2025 - Present</p>
+                    <p>Conducting offline and online training in Python, Data Analytics, and AI focused on career-oriented skill development.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Data Analytics Teacher</h3>
+                    <p class="organization">VijAI Institute | Apr 2023 - Dec 2024</p>
+                    <p>Led practical sessions on Power BI and data visualization dashboards after completing the Masters Program.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Computer Teacher</h3>
+                    <p class="organization">SOS Children's Village School</p>
+                    <p>Taught computer fundamentals and programming basics to school students.</p>
+                </div>
             </div>
-            <div class="exp-item">
-                <h3>Data Analytics Teacher</h3>
-                <p class="company">vijAI Institute | 2024</p>
-                <p>Conducted practical sessions on Power BI and data visualization.</p>
+        </div>
+    </section>
+
+    <section id="projects" class="alt-bg">
+        <div class="container">
+            <h2 class="section-title">Key Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-icon">📊</div>
+                    <h3>Customer Churn Analysis</h3>
+                    <p>Performed EDA using Python (Pandas, Seaborn) to identify factors influencing customer churn in the Telecom industry.</p>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">🛒</div>
+                    <h3>Blinkit Sales Analysis</h3>
+                    <p>Built an interactive Power BI dashboard to analyze sales performance and generate actionable business insights.</p>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">🎓</div>
+                    <h3>Online Course Analysis</h3>
+                    <p>Created visual reports using Power BI to track trends in enrollments and course performance across platforms.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="youtube">
-        <h2 class="section-title">YouTube Content</h2>
-        <div class="video-grid">
-            <div class="video-card">
-                <h3>Python for Beginners</h3>
-                <a href="https://youtube.com/@RishiSingh.rivise" target="_blank">Watch on YouTube</a>
+        <div class="container">
+            <h2 class="section-title">Featured Video</h2>
+            <div class="featured-video-container">
+                <a href="https://youtu.be/z56iFzIVe18" target="_blank" class="video-card-large">
+                    <div class="thumbnail-wrapper">
+                        <img src="https://img.youtube.com/vi/z56iFzIVe18/maxresdefault.jpg" alt="AI kyu seekhna zaroori hai">
+                        <div class="play-btn">▶</div>
+                    </div>
+                    <div class="video-meta">
+                        <h3>AI क्यों सीखना ज़रूरी है? | Zoom Class Highlights</h3>
+                        <p>In this video, I discuss the importance of Artificial Intelligence, the data explosion, and why skills matter more than degrees in the 4th Industrial Revolution.</p>
+                        <span class="btn-yt">Watch on YouTube</span>
+                    </div>
+                </a>
             </div>
-            <div class="video-card">
-                <h3>Data Science Projects</h3>
-                <a href="https://youtube.com/@RishiSingh.rivise" target="_blank">Watch on YouTube</a>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Connect With Me</h2>
+            <div class="contact-grid">
+                <div class="contact-info-box">
+                    <div class="contact-item">
+                        <strong>📧 Email</strong>
+                        <p>officialrishisingh.ds@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <strong>📞 Phone</strong>
+                        <p>+91 7505650613</p>
+                    </div>
+                    <div class="contact-item">
+                        <strong>📍 Location</strong>
+                        <p>Varanasi, Uttar Pradesh</p>
+                    </div>
+                </div>
+                <div class="social-links-grid">
+                    <a href="https://linkedin.com/in/ds-rishisingh" target="_blank" class="social-tile linkedin">LinkedIn</a>
+                    <a href="https://github.com/Rishi-Singh-11" target="_blank" class="social-tile github">GitHub</a>
+                    <a href="https://youtube.com/@RishiSingh.rivise" target="_blank" class="social-tile youtube">YouTube Channel</a>
+                </div>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>© 2025 Rishi Singh | Prepared for Mahila Vidyalaya Presentation</p>
+        <div class="container">
+            <p>© 2025 Rishi Singh | AI & Data Science Educator</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
