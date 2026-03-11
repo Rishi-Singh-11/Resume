@@ -3,99 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rishi Singh | AI & Data Science Educator</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <title>Rishi Singh | AI Educator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav>
-        <div class="container nav-container">
-            <div class="logo">Rishi<span>Singh</span></div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact" class="nav-btn">Hire Me</a></li>
-            </ul>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">RISHI<span>SINGH</span></div>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+            </div>
         </div>
     </nav>
 
     <header id="about" class="hero">
         <div class="container">
-            <div class="profile-wrapper">
-                <img src="assets/images/profile.png" alt="Rishi Singh" class="profile-img">
+            <div class="profile-frame">
+                <img src="assets/images/profile.png" alt="Rishi Singh">
             </div>
-            <h1>Building the future with <span class="highlight">Data & AI</span></h1>
-            <p class="hero-tagline">Founder of Rivise Institute | Based in Nainital, Uttarakhand</p>
-            <p class="hero-summary">AI and Data Science educator passionate about simplifying complex concepts for beginners through interactive teaching and real-world projects.</p>
-            <div class="hero-actions">
-                <a href="assets/docs/rishi-resume.pdf" class="btn-primary" target="_blank">Download CV</a>
-                <a href="#projects" class="btn-outline">My Projects</a>
+            <h1>Building the future with <br><span class="gradient-text">Data Science & AI</span></h1>
+            <p class="location-tag">📍 Nainital, Uttarakhand</p>
+            <p class="summary-text">Founder of <strong>Rivise Institute</strong>. Educator specializing in Python, Power BI, and Machine Learning. I help students transition into the data-driven world through project-based learning.</p>
+            <div class="cta-group">
+                <a href="assets/docs/rishi-resume.pdf" class="btn-main" target="_blank">Download Resume</a>
+                <a href="https://github.com/Rishi-Singh-11" class="btn-sub" target="_blank">GitHub</a>
             </div>
         </div>
     </header>
 
-    <section id="skills" class="section-alt">
+    <section class="skills-section">
         <div class="container">
-            <span class="section-label">Technical Stack</span>
+            <h2 class="section-title">Technical Expertise</h2>
             <div class="skills-grid">
-                <div class="skill-tag">Python</div>
-                <div class="skill-tag">Pandas</div>
-                <div class="skill-tag">Power BI</div>
-                <div class="skill-tag">Machine Learning</div>
-                <div class="skill-tag">Seaborn</div>
-                <div class="skill-tag">SQL</div>
-                <div class="skill-tag">GitHub</div>
-                <div class="skill-tag">Excel</div>
+                <div class="skill-item">Python</div>
+                <div class="skill-item">Pandas</div>
+                <div class="skill-item">Power BI</div>
+                <div class="skill-item">Machine Learning</div>
+                <div class="skill-item">EDA</div>
+                <div class="skill-item">SQL</div>
+                <div class="skill-item">Excel</div>
+                <div class="skill-item">GitHub</div>
             </div>
         </div>
     </section>
 
-    <section id="experience">
+    <section id="experience" class="exp-section">
         <div class="container">
-            <span class="section-label">My Career</span>
-            <div class="dual-grid">
-                <div class="exp-col">
-                    <div class="card">
-                        <span class="card-date">Mar 2025 - Present</span>
-                        <h3>Founder & Instructor</h3>
-                        <span class="org">Rivise Institute</span>
-                        <ul>
-                            <li>Teaching Python and Data Science online and offline.</li>
-                            <li>Creating project-based curriculum for AI beginners.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="edu-col">
-                    <div class="card">
-                        <h3>Education</h3>
-                        <span class="org">Kumaun University</span>
-                        <p>Master of Arts & Bachelor of Arts</p>
-                        <br>
-                        <span class="org">VijAI Institute</span>
-                        <p>Data Science Masters Program (2023)</p>
-                    </div>
-                </div>
+            <h2 class="section-title">Professional Journey</h2>
+            
+            <div class="exp-box">
+                <span class="date">Mar 2025 - Present</span>
+                <h3>Founder & Instructor</h3>
+                <p class="company">Rivise Institute</p>
+                <p>Leading AI and Data Science training. Designing practical curriculums in Python and Data Analytics for diverse students.</p>
+            </div>
+
+            <div class="exp-box">
+                <span class="date">2023 - 2024</span>
+                <h3>Data Analytics Instructor</h3>
+                <p class="company">VijAI Institute</p>
+                <p>Guided students through Power BI dashboard development and Python data cleaning projects.</p>
             </div>
         </div>
     </section>
 
-    <section id="youtube" class="section-alt">
+    <section id="youtube" class="video-section">
         <div class="container">
-            <div class="video-section-inner">
-                <div class="video-info">
-                    <span class="section-label" style="text-align: left;">YouTube Spotlight</span>
-                    <h3>AI क्यों सीखना ज़रूरी है?</h3>
-                    <p>Discussing the 4th Industrial Revolution and why skills are more important than degrees today.</p>
-                    <br>
-                    <a href="https://youtu.be/z56iFzIVe18" target="_blank" class="btn-primary">Watch Now</a>
-                </div>
-                <div class="video-frame">
+            <h2 class="section-title">Featured Workshop</h2>
+            <div class="video-card">
+                <div class="video-thumb">
                     <a href="https://youtu.be/z56iFzIVe18" target="_blank">
-                        <img src="https://img.youtube.com/vi/z56iFzIVe18/maxresdefault.jpg" alt="Video">
-                        <div class="play-overlay">▶</div>
+                        <img src="https://img.youtube.com/vi/z56iFzIVe18/maxresdefault.jpg" alt="AI Video">
+                        <div class="play-icon">▶</div>
                     </a>
+                </div>
+                <div class="video-info">
+                    <h3>AI क्यों सीखना ज़रूरी है?</h3>
+                    <p>Discussing the 4th Industrial Revolution and why skills are the new currency.</p>
                 </div>
             </div>
         </div>
@@ -103,19 +91,17 @@
 
     <footer id="contact">
         <div class="container">
-            <div class="footer-info">
-                <h2>Let's connect.</h2>
-                <div class="footer-contact">
-                    <p>📍 Nainital, Uttarakhand</p>
-                    <p>📧 officialrishisingh.ds@gmail.com</p>
-                    <p>📞 +91 7505650613</p>
-                </div>
-                <div class="footer-socials">
-                    <a href="https://linkedin.com/in/ds-rishisingh">LinkedIn</a>
-                    <a href="https://github.com/Rishi-Singh-11">GitHub</a>
-                    <a href="https://youtube.com/@RishiSingh.rivise">YouTube</a>
-                </div>
+            <h2>Let's Connect</h2>
+            <div class="contact-links">
+                <p>📧 officialrishisingh.ds@gmail.com</p>
+                <p>📞 +91 7505650613</p>
             </div>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/ds-rishisingh">LinkedIn</a>
+                <a href="https://github.com/Rishi-Singh-11">GitHub</a>
+                <a href="https://youtube.com/@RishiSingh.rivise">YouTube</a>
+            </div>
+            <p class="copy">© 2025 Rishi Singh | Nainital, Uttarakhand</p>
         </div>
     </footer>
 
