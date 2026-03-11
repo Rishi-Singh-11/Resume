@@ -4,174 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rishi Singh | AI & Data Science Educator</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <nav>
-        <div class="logo">Rishi<span>Singh</span></div>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact" class="btn-contact">Contact</a></li>
-        </ul>
+        <div class="container nav-container">
+            <div class="logo">Rishi<span>Singh</span></div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact" class="nav-btn">Hire Me</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <header id="about" class="hero-section">
+    <header id="about" class="hero">
         <div class="container">
-            <img src="assets/images/profile.png" alt="Rishi Singh" class="profile-img">
-            <h1>Hi, I'm <span class="highlight">Rishi Singh</span></h1>
-            <p class="tagline">Founder of <strong>Rivise Institute</strong> | AI & Data Science Educator</p>
-            <div class="summary-box">
-                <p><strong>Summary:</strong> AI and Data Science educator with experience in teaching Python, Data Analytics, and Data Science to students from diverse academic backgrounds. Founder of Rivise Institute, where I conduct online and offline programs to help students build practical skills. I specialize in simplifying complex AI concepts for beginners through project-based learning and real-world datasets.</p>
+            <div class="profile-wrapper">
+                <img src="assets/images/profile.png" alt="Rishi Singh" class="profile-img">
             </div>
-            <div class="hero-btns">
-                <a href="assets/docs/rishi-resume.pdf" class="btn-primary" target="_blank">Download Resume</a>
-                <a href="#contact" class="btn-secondary">Get In Touch</a>
+            <h1>Building the future with <span class="highlight">Data & AI</span></h1>
+            <p class="hero-tagline">Founder of Rivise Institute | Based in Nainital, Uttarakhand</p>
+            <p class="hero-summary">AI and Data Science educator passionate about simplifying complex concepts for beginners through interactive teaching and real-world projects.</p>
+            <div class="hero-actions">
+                <a href="assets/docs/rishi-resume.pdf" class="btn-primary" target="_blank">Download CV</a>
+                <a href="#projects" class="btn-outline">My Projects</a>
             </div>
         </div>
     </header>
 
-    <section id="skills" class="alt-bg">
+    <section id="skills" class="section-alt">
         <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-container">
-                <span class="skill-tag">Python</span>
-                <span class="skill-tag">Pandas</span>
-                <span class="skill-tag">Seaborn</span>
-                <span class="skill-tag">NumPy</span>
-                <span class="skill-tag">Data Cleaning</span>
-                <span class="skill-tag">EDA</span>
-                <span class="skill-tag">GitHub</span>
-                <span class="skill-tag">Jupyter Notebook</span>
-                <span class="skill-tag">Excel</span>
-                <span class="skill-tag">Machine Learning</span>
-                <span class="skill-tag">Power BI</span>
-                <span class="skill-tag">Matplotlib</span>
+            <span class="section-label">Technical Stack</span>
+            <div class="skills-grid">
+                <div class="skill-tag">Python</div>
+                <div class="skill-tag">Pandas</div>
+                <div class="skill-tag">Power BI</div>
+                <div class="skill-tag">Machine Learning</div>
+                <div class="skill-tag">Seaborn</div>
+                <div class="skill-tag">SQL</div>
+                <div class="skill-tag">GitHub</div>
+                <div class="skill-tag">Excel</div>
             </div>
         </div>
     </section>
 
     <section id="experience">
         <div class="container">
-            <h2 class="section-title">Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h3>Founder & Instructor</h3>
-                    <p class="organization">Rivise Institute, Varanasi/Online | Mar 2025 – Present</p>
-                    <ul>
-                        <li>Founded an AI and Data Science training institute focused on practical learning.</li>
-                        <li>Teach Python, Data Analytics, and Data Science through online and offline classes.</li>
-                        <li>Design structured courses covering Python fundamentals, dashboards, and real-world projects.</li>
-                        <li>Conduct live workshops introducing AI to beginners.</li>
-                    </ul>
+            <span class="section-label">My Career</span>
+            <div class="dual-grid">
+                <div class="exp-col">
+                    <div class="card">
+                        <span class="card-date">Mar 2025 - Present</span>
+                        <h3>Founder & Instructor</h3>
+                        <span class="org">Rivise Institute</span>
+                        <ul>
+                            <li>Teaching Python and Data Science online and offline.</li>
+                            <li>Creating project-based curriculum for AI beginners.</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="timeline-item">
-                    <h3>Data Analytics Instructor</h3>
-                    <p class="organization">VijAI Institute | Apr 2023 – Dec 2024</p>
-                    <ul>
-                        <li>Taught Data Analytics concepts including Python and Power BI.</li>
-                        <li>Guided students through real-world data analysis projects.</li>
-                        <li>Conducted practical sessions focused on data visualization.</li>
-                    </ul>
-                </div>
-                <div class="timeline-item">
-                    <h3>Computer Teacher</h3>
-                    <p class="organization">SOS Children's Village School</p>
-                    <p>Taught computer fundamentals and helped students develop digital literacy and basic programming understanding.</p>
+                <div class="edu-col">
+                    <div class="card">
+                        <h3>Education</h3>
+                        <span class="org">Kumaun University</span>
+                        <p>Master of Arts & Bachelor of Arts</p>
+                        <br>
+                        <span class="org">VijAI Institute</span>
+                        <p>Data Science Masters Program (2023)</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="alt-bg">
+    <section id="youtube" class="section-alt">
         <div class="container">
-            <div class="two-column">
-                <div>
-                    <h2 class="section-title" style="text-align: left;">Education</h2>
-                    <ul class="edu-list">
-                        <li><strong>VijAI Institute</strong> - Data Science Masters Program (2023)</li>
-                        <li><strong>Kumaun University</strong> - Master of Arts (M.A.) (2018)</li>
-                        <li><strong>Kumaun University</strong> - Bachelor of Arts (B.A.) (2016)</li>
-                        <li><strong>NIOS</strong> - Senior Secondary (2013)</li>
-                        <li><strong>St. Andrews Public School</strong> - High School (2011)</li>
-                    </ul>
-                </div>
-                <div>
-                    <h2 class="section-title" style="text-align: left;">Teaching Approach</h2>
-                    <ul class="edu-list">
-                        <li>✅ Simplifying complex AI concepts</li>
-                        <li>✅ Project-based learning (Real datasets)</li>
-                        <li>✅ Interactive workshops & live coding</li>
-                        <li>✅ Career-oriented skill development</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects">
-        <div class="container">
-            <h2 class="section-title">Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <h3>Customer Churn Analysis</h3>
-                    <p>Performed EDA for the Telecom Industry to identify churn factors using Python cleaning and visualization.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Blinkit Data Analysis</h3>
-                    <p>Built an interactive Power BI dashboard for sales analysis and business insights generation.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Online Course Analysis</h3>
-                    <p>Created visual Power BI reports tracking enrollment trends and performance.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="youtube" class="alt-bg">
-        <div class="container">
-            <h2 class="section-title">Featured Video</h2>
-            <div class="video-wrapper-small">
-                <a href="https://youtu.be/z56iFzIVe18" target="_blank" class="video-box">
-                    <img src="https://img.youtube.com/vi/z56iFzIVe18/maxresdefault.jpg" alt="Video Thumbnail">
-                    <div class="play-icon">▶</div>
-                </a>
-                <div class="video-text">
+            <div class="video-section-inner">
+                <div class="video-info">
+                    <span class="section-label" style="text-align: left;">YouTube Spotlight</span>
                     <h3>AI क्यों सीखना ज़रूरी है?</h3>
-                    <p>Zoom Class Highlights: Discussing the 4th Industrial Revolution and why skills matter more than degrees.</p>
+                    <p>Discussing the 4th Industrial Revolution and why skills are more important than degrees today.</p>
+                    <br>
+                    <a href="https://youtu.be/z56iFzIVe18" target="_blank" class="btn-primary">Watch Now</a>
+                </div>
+                <div class="video-frame">
+                    <a href="https://youtu.be/z56iFzIVe18" target="_blank">
+                        <img src="https://img.youtube.com/vi/z56iFzIVe18/maxresdefault.jpg" alt="Video">
+                        <div class="play-overlay">▶</div>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact">
+    <footer id="contact">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-box">
-                <p>📍 <strong>Location:</strong> Nainital, Uttarakhand</p>
-                <p>📧 <strong>Email:</strong> officialrishisingh.ds@gmail.com</p>
-                <p>📞 <strong>Phone:</strong> +91 7505650613</p>
-                <div class="social-row">
-                    <a href="https://linkedin.com/in/ds-rishisingh" target="_blank">LinkedIn</a>
-                    <a href="https://github.com/Rishi-Singh-11" target="_blank">GitHub</a>
-                    <a href="https://youtube.com/@RishiSingh.rivise" target="_blank">YouTube</a>
+            <div class="footer-info">
+                <h2>Let's connect.</h2>
+                <div class="footer-contact">
+                    <p>📍 Nainital, Uttarakhand</p>
+                    <p>📧 officialrishisingh.ds@gmail.com</p>
+                    <p>📞 +91 7505650613</p>
                 </div>
-                <div class="interests">
-                    <p><strong>Interests:</strong> Teaching, Reading Tech Books, Playing Guitar 🎸</p>
+                <div class="footer-socials">
+                    <a href="https://linkedin.com/in/ds-rishisingh">LinkedIn</a>
+                    <a href="https://github.com/Rishi-Singh-11">GitHub</a>
+                    <a href="https://youtube.com/@RishiSingh.rivise">YouTube</a>
                 </div>
             </div>
         </div>
-    </section>
-
-    <footer>
-        <p>© 2025 Rishi Singh | AI & Data Science Educator</p>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
