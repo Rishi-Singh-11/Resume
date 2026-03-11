@@ -6,243 +6,177 @@
   <title>Rishi Singh — AI & Data Science Educator</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fraunces:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- CURSOR -->
-  <div class="cursor" id="cursor"></div>
-  <div class="cursor-dot" id="cursorDot"></div>
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-brand">Rishi<span>.</span></a>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#content">Content</a>
+      </nav>
+      <a href="assets/docs/rishi-resume.pdf" download class="nav-btn">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Resume
+      </a>
+      <button class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
 
-  <!-- NAV -->
-  <nav class="nav" id="nav">
-    <div class="nav-logo">RS<span class="dot">.</span></div>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#content">Content</a></li>
-    </ul>
-    <a href="assets/docs/rishi-resume.pdf" download class="nav-cta">
-      Download CV <span class="arrow">↓</span>
-    </a>
-    <button class="hamburger" id="hamburger">
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
-
-  <!-- MOBILE MENU -->
-  <div class="mobile-menu" id="mobileMenu">
-    <ul>
-      <li><a href="#about" class="mob-link">About</a></li>
-      <li><a href="#skills" class="mob-link">Skills</a></li>
-      <li><a href="#experience" class="mob-link">Experience</a></li>
-      <li><a href="#projects" class="mob-link">Projects</a></li>
-      <li><a href="#content" class="mob-link">Content</a></li>
-      <li><a href="assets/docs/rishi-resume.pdf" download class="mob-link">Download CV</a></li>
-    </ul>
+  <!-- MOBILE DRAWER -->
+  <div class="drawer" id="drawer">
+    <div class="drawer-inner">
+      <a href="#about" class="d-link">About</a>
+      <a href="#experience" class="d-link">Experience</a>
+      <a href="#projects" class="d-link">Projects</a>
+      <a href="#skills" class="d-link">Skills</a>
+      <a href="#content" class="d-link">Content</a>
+      <a href="assets/docs/rishi-resume.pdf" download class="d-link">Download PDF</a>
+    </div>
   </div>
 
   <!-- HERO -->
   <section class="hero" id="hero">
-    <div class="hero-bg-grid"></div>
-    <div class="hero-blob blob-1"></div>
-    <div class="hero-blob blob-2"></div>
+    <div class="hero-inner">
 
-    <div class="hero-content">
       <div class="hero-text">
-        <div class="hero-tag reveal-up">
-          <span class="pulse-dot"></span> Available for Collaborations
+        <div class="hero-chip">
+          <span class="chip-dot"></span>Available for Collaborations
         </div>
-        <h1 class="hero-name reveal-up delay-1">
-          Rishi<br/><em>Singh</em>
+        <h1>
+          Hi, I'm<br/>
+          <em>Rishi Singh</em>
         </h1>
-        <p class="hero-title reveal-up delay-2">
-          AI & Data Science Educator<br/>
-          <span class="hero-subtitle">Founder, Rivise Institute · Varanasi</span>
+        <p class="hero-role">AI &amp; Data Science Educator · Founder, Rivise Institute</p>
+        <p class="hero-bio">
+          I teach Python, Data Analytics, and Machine Learning — making complex AI concepts accessible to every beginner through real projects, live coding, and human-first teaching.
         </p>
-        <p class="hero-desc reveal-up delay-3">
-          Simplifying the complex world of Artificial Intelligence and Data Science — one student at a time, through real projects and human-first teaching.
-        </p>
-        <div class="hero-actions reveal-up delay-4">
-          <a href="#projects" class="btn-primary">View My Work</a>
-          <a href="#content" class="btn-ghost">Watch on YouTube</a>
+        <div class="hero-socials">
+          <a href="https://linkedin.com/in/ds-rishisingh" target="_blank" class="soc-btn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/Rishi-Singh-11" target="_blank" class="soc-btn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a href="https://www.youtube.com/@RishiSingh.rivise" target="_blank" class="soc-btn yt">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.95C5.12 20 12 20 12 20s6.88 0 8.59-.47a2.78 2.78 0 0 0 1.96-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="#fff"/></svg>
+            YouTube
+          </a>
+          <a href="mailto:officialrishisingh.ds@gmail.com" class="soc-btn">📧 Email</a>
         </div>
-        <div class="hero-stats reveal-up delay-5">
-          <div class="stat">
-            <span class="stat-num">2+</span>
-            <span class="stat-label">Years Teaching</span>
-          </div>
-          <div class="stat-divider"></div>
-          <div class="stat">
-            <span class="stat-num">3</span>
-            <span class="stat-label">Data Projects</span>
-          </div>
-          <div class="stat-divider"></div>
-          <div class="stat">
-            <span class="stat-num">∞</span>
-            <span class="stat-label">Student Impact</span>
-          </div>
+        <div class="hero-ctas">
+          <a href="#projects" class="btn-fill">View My Work</a>
+          <a href="assets/docs/rishi-resume.pdf" download class="btn-line">Download CV</a>
         </div>
       </div>
 
-      <div class="hero-photo-wrap reveal-right delay-2">
-        <div class="photo-ring"></div>
-        <div class="photo-card">
-          <img src="assets/images/profile.png" alt="Rishi Singh" class="hero-photo" />
+      <div class="hero-right">
+        <div class="photo-wrap">
+          <img src="assets/images/profile.png" alt="Rishi Singh" class="profile-img" />
         </div>
-        <div class="photo-badge badge-1">
-          <span class="badge-icon">🐍</span>
-          <span>Python Expert</span>
-        </div>
-        <div class="photo-badge badge-2">
-          <span class="badge-icon">📊</span>
-          <span>Power BI</span>
-        </div>
-        <div class="photo-badge badge-3">
-          <span class="badge-icon">🤖</span>
-          <span>ML & AI</span>
-        </div>
+        <div class="float-card f1">📍 Varanasi, India</div>
+        <div class="float-card f2">🏫 Rivise Institute</div>
       </div>
+
     </div>
 
-    <div class="scroll-hint">
-      <span>Scroll</span>
-      <div class="scroll-line"></div>
+    <div class="stats-row">
+      <div class="s-item"><strong>2+</strong><span>Years Teaching</span></div>
+      <div class="s-div"></div>
+      <div class="s-item"><strong>3</strong><span>Data Projects</span></div>
+      <div class="s-div"></div>
+      <div class="s-item"><strong>12+</strong><span>Tech Skills</span></div>
+      <div class="s-div"></div>
+      <div class="s-item"><strong>∞</strong><span>Student Impact</span></div>
     </div>
   </section>
 
   <!-- ABOUT -->
-  <section class="section about" id="about">
+  <section class="section alt" id="about">
     <div class="container">
-      <div class="section-label reveal-up">About Me</div>
-      <div class="about-grid">
-        <div class="about-left reveal-up delay-1">
-          <h2>Teaching data.<br/>Building futures.</h2>
-          <p>
-            I'm an AI and Data Science educator passionate about making cutting-edge technology accessible to everyone. Through Rivise Institute — which I founded — I deliver both online and offline training in Python, Data Analytics, and Machine Learning.
-          </p>
-          <p>
-            My teaching philosophy revolves around real-world datasets, live coding, and project-based learning. I believe the best way to learn data science is by doing it.
-          </p>
-          <div class="about-contact">
-            <a href="mailto:officialrishisingh.ds@gmail.com" class="contact-pill">
-              <span>✉</span> officialrishisingh.ds@gmail.com
-            </a>
-            <a href="tel:7505650613" class="contact-pill">
-              <span>📞</span> 7505650613
-            </a>
-            <a href="https://linkedin.com/in/ds-rishisingh" target="_blank" class="contact-pill">
-              <span>in</span> LinkedIn
-            </a>
-          </div>
-        </div>
-        <div class="about-right reveal-right delay-2">
-          <div class="approach-cards">
-            <div class="approach-card">
-              <div class="ac-icon">🎯</div>
-              <h4>Project-Based</h4>
-              <p>Every concept taught through real datasets and practical projects</p>
-            </div>
-            <div class="approach-card">
-              <div class="ac-icon">🧠</div>
-              <h4>Beginner-Friendly</h4>
-              <p>Complex AI simplified for students from all academic backgrounds</p>
-            </div>
-            <div class="approach-card">
-              <div class="ac-icon">💼</div>
-              <h4>Career-Oriented</h4>
-              <p>Skills tailored to what the modern data-driven industry demands</p>
-            </div>
-            <div class="approach-card">
-              <div class="ac-icon">🎬</div>
-              <h4>Content Creator</h4>
-              <p>YouTube tutorials and recorded lectures for self-paced learning</p>
-            </div>
-          </div>
-        </div>
+      <div class="sec-head">
+        <span class="tag">About</span>
+        <h2>Professional Summary</h2>
       </div>
-    </div>
-  </section>
-
-  <!-- SKILLS -->
-  <section class="section skills-section" id="skills">
-    <div class="container">
-      <div class="section-label reveal-up">Skills</div>
-      <h2 class="section-title reveal-up delay-1">My Tech Stack</h2>
-      <div class="skills-grid reveal-up delay-2">
-        <div class="skill-chip" data-level="95">
-          <span class="skill-icon">🐍</span> Python
-          <div class="skill-bar"><div class="skill-fill" style="--w:95%"></div></div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>AI and Data Science educator with experience in teaching Python, Data Analytics, and Data Science to students from diverse academic backgrounds. Founder of <strong>Rivise Institute</strong>, where both online and offline training programs are conducted to help students build practical skills in analytics and programming.</p>
+          <p>Experienced in simplifying complex AI concepts for beginners through interactive teaching methods, real-world datasets, and project-based learning. Passionate about spreading awareness of Artificial Intelligence and Data Science among students and helping them build careers in the modern data-driven world.</p>
+          <div class="contact-grid">
+            <a href="tel:7505650613" class="c-pill">📞 7505650613</a>
+            <a href="mailto:officialrishisingh.ds@gmail.com" class="c-pill">📧 officialrishisingh.ds@gmail.com</a>
+            <span class="c-pill">📍 Varanasi, India</span>
+          </div>
         </div>
-        <div class="skill-chip" data-level="90">
-          <span class="skill-icon">🐼</span> Pandas
-          <div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div>
-        </div>
-        <div class="skill-chip" data-level="85">
-          <span class="skill-icon">🔢</span> NumPy
-          <div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div>
-        </div>
-        <div class="skill-chip" data-level="88">
-          <span class="skill-icon">📊</span> Power BI
-          <div class="skill-bar"><div class="skill-fill" style="--w:88%"></div></div>
-        </div>
-        <div class="skill-chip" data-level="90">
-          <span class="skill-icon">📉</span> Matplotlib
-          <div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div>
-        </div>
-        <div class="skill-chip" data-level="85">
-          <span class="skill-icon">🎨</span> Seaborn
-          <div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div>
-        </div>
-        <div class="skill-chip" data-level="80">
-          <span class="skill-icon">🤖</span> Machine Learning
-          <div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div>
-        </div>
-        <div class="skill-chip" data-level="85">
-          <span class="skill-icon">🔍</span> EDA
-          <div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div>
-        </div>
-        <div class="skill-chip" data-level="88">
-          <span class="skill-icon">🧹</span> Data Cleaning
-          <div class="skill-bar"><div class="skill-fill" style="--w:88%"></div></div>
-        </div>
-        <div class="skill-chip" data-level="85">
-          <span class="skill-icon">📓</span> Jupyter Notebook
-          <div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div>
-        </div>
-        <div class="skill-chip" data-level="80">
-          <span class="skill-icon">🐙</span> GitHub
-          <div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div>
-        </div>
-        <div class="skill-chip" data-level="85">
-          <span class="skill-icon">📗</span> Excel
-          <div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div>
+        <div class="teach-approach">
+          <h3>Teaching Approach</h3>
+          <div class="ap-list">
+            <div class="ap-item">
+              <div class="ap-ico">🎯</div>
+              <div>
+                <strong>Project-Based Learning</strong>
+                <p>Real-world datasets, not just theory</p>
+              </div>
+            </div>
+            <div class="ap-item">
+              <div class="ap-ico">🧠</div>
+              <div>
+                <strong>Beginner-Friendly</strong>
+                <p>Complex AI simplified for everyone</p>
+              </div>
+            </div>
+            <div class="ap-item">
+              <div class="ap-ico">💻</div>
+              <div>
+                <strong>Live Coding Sessions</strong>
+                <p>Interactive workshops and seminars</p>
+              </div>
+            </div>
+            <div class="ap-item">
+              <div class="ap-ico">🚀</div>
+              <div>
+                <strong>Career-Oriented</strong>
+                <p>Skills that the industry actually needs</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- EXPERIENCE -->
-  <section class="section experience-section" id="experience">
+  <section class="section" id="experience">
     <div class="container">
-      <div class="section-label reveal-up">Experience</div>
-      <h2 class="section-title reveal-up delay-1">Career Journey</h2>
+      <div class="sec-head">
+        <span class="tag">Experience</span>
+        <h2>Teaching & Professional Journey</h2>
+      </div>
       <div class="timeline">
 
-        <div class="timeline-item reveal-up delay-1">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">Mar 2025 — Present</div>
-          <div class="timeline-card">
-            <div class="tc-header">
-              <div>
-                <h3>Founder & Instructor</h3>
-                <span class="tc-company">Rivise Institute · Varanasi</span>
-              </div>
-              <span class="tc-badge current">Current</span>
-            </div>
-            <ul class="tc-list">
+        <div class="tl-item">
+          <div class="tl-left">
+            <span class="tl-badge">Current</span>
+            <div class="tl-date">March 2025 – Present</div>
+          </div>
+          <div class="tl-mid">
+            <div class="tl-dot active"></div>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-card">
+            <h3>Founder & Instructor</h3>
+            <div class="tl-co">Rivise Institute · Varanasi</div>
+            <ul>
               <li>Founded an AI and Data Science training institute focused on practical learning</li>
               <li>Teach Python, Data Analytics, and Data Science through online and offline classes</li>
               <li>Design structured courses covering Python fundamentals, data analysis, dashboards, and real-world projects</li>
@@ -252,35 +186,36 @@
           </div>
         </div>
 
-        <div class="timeline-item reveal-up delay-2">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">Apr 2023 — Dec 2024</div>
-          <div class="timeline-card">
-            <div class="tc-header">
-              <div>
-                <h3>Data Analytics Instructor</h3>
-                <span class="tc-company">VijAI Institute</span>
-              </div>
-            </div>
-            <ul class="tc-list">
+        <div class="tl-item">
+          <div class="tl-left">
+            <div class="tl-date">2024 – 2025<br/><small>6 Months</small></div>
+          </div>
+          <div class="tl-mid">
+            <div class="tl-dot"></div>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-card">
+            <h3>Data Analytics Instructor</h3>
+            <div class="tl-co">VijAI Institute</div>
+            <ul>
               <li>Taught Data Analytics concepts including Python and Power BI</li>
               <li>Guided students through real-world data analysis projects</li>
-              <li>Conducted practical sessions focused on data visualization and dashboard development</li>
+              <li>Conducted practical sessions on data visualization and dashboard development</li>
             </ul>
           </div>
         </div>
 
-        <div class="timeline-item reveal-up delay-3">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">Earlier</div>
-          <div class="timeline-card">
-            <div class="tc-header">
-              <div>
-                <h3>Computer Teacher</h3>
-                <span class="tc-company">SOS Children's Village School</span>
-              </div>
-            </div>
-            <ul class="tc-list">
+        <div class="tl-item">
+          <div class="tl-left">
+            <div class="tl-date">Earlier</div>
+          </div>
+          <div class="tl-mid">
+            <div class="tl-dot"></div>
+          </div>
+          <div class="tl-card">
+            <h3>Computer Teacher</h3>
+            <div class="tl-co">SOS Children's Village School</div>
+            <ul>
               <li>Taught computer fundamentals to school students</li>
               <li>Helped students develop digital literacy and basic programming understanding</li>
             </ul>
@@ -292,134 +227,200 @@
   </section>
 
   <!-- EDUCATION -->
-  <section class="section education-section">
+  <section class="section alt" id="education">
     <div class="container">
-      <div class="section-label reveal-up">Education</div>
-      <h2 class="section-title reveal-up delay-1">Academic Background</h2>
-      <div class="edu-grid">
-        <div class="edu-card reveal-up delay-1">
-          <div class="edu-year">2023</div>
-          <div class="edu-icon">🎓</div>
-          <h4>Data Science Masters Program</h4>
-          <p>VijAI Institute</p>
+      <div class="sec-head">
+        <span class="tag">Education</span>
+        <h2>Academic Background</h2>
+      </div>
+      <div class="edu-list">
+        <div class="edu-row">
+          <div class="edu-yr">2024</div>
+          <div class="edu-dot-wrap"><div class="edu-dot"></div></div>
+          <div class="edu-info">
+            <strong>Data Science Masters Program</strong>
+            <span>VijAI Institute</span>
+          </div>
         </div>
-        <div class="edu-card reveal-up delay-2">
-          <div class="edu-year">2018</div>
-          <div class="edu-icon">📚</div>
-          <h4>Master of Arts (M.A.)</h4>
-          <p>Kumaun University</p>
+        <div class="edu-row">
+          <div class="edu-yr">2018</div>
+          <div class="edu-dot-wrap"><div class="edu-dot"></div></div>
+          <div class="edu-info">
+            <strong>Master of Arts (M.A.)</strong>
+            <span>Kumaun University</span>
+          </div>
         </div>
-        <div class="edu-card reveal-up delay-3">
-          <div class="edu-year">2016</div>
-          <div class="edu-icon">🎒</div>
-          <h4>Bachelor of Arts (B.A.)</h4>
-          <p>Kumaun University</p>
+        <div class="edu-row">
+          <div class="edu-yr">2016</div>
+          <div class="edu-dot-wrap"><div class="edu-dot"></div></div>
+          <div class="edu-info">
+            <strong>Bachelor of Arts (B.A.)</strong>
+            <span>Kumaun University</span>
+          </div>
         </div>
-        <div class="edu-card reveal-up delay-4">
-          <div class="edu-year">2013</div>
-          <div class="edu-icon">📝</div>
-          <h4>Senior Secondary</h4>
-          <p>NIOS</p>
+        <div class="edu-row">
+          <div class="edu-yr">2013</div>
+          <div class="edu-dot-wrap"><div class="edu-dot"></div></div>
+          <div class="edu-info">
+            <strong>Senior Secondary Education</strong>
+            <span>National Institute of Open Schooling (NIOS)</span>
+          </div>
         </div>
-        <div class="edu-card reveal-up delay-5">
-          <div class="edu-year">2011</div>
-          <div class="edu-icon">🏫</div>
-          <h4>High School</h4>
-          <p>St. Andrews Public School</p>
+        <div class="edu-row">
+          <div class="edu-yr">2011</div>
+          <div class="edu-dot-wrap"><div class="edu-dot"></div></div>
+          <div class="edu-info">
+            <strong>High School</strong>
+            <span>St. Andrews Public School</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- PROJECTS -->
-  <section class="section projects-section" id="projects">
+  <section class="section" id="projects">
     <div class="container">
-      <div class="section-label reveal-up">Projects</div>
-      <h2 class="section-title reveal-up delay-1">Featured Work</h2>
-      <div class="projects-grid">
+      <div class="sec-head">
+        <span class="tag">Projects</span>
+        <h2>Featured Work</h2>
+      </div>
+      <div class="proj-grid">
 
-        <div class="project-card reveal-up delay-1">
-          <div class="project-num">01</div>
-          <div class="project-tag">Python · EDA</div>
+        <div class="proj-card">
+          <div class="proj-top">
+            <span class="proj-num">01</span>
+            <div class="proj-tags"><span>Python</span><span>EDA</span></div>
+          </div>
           <h3>Customer Churn Analysis</h3>
-          <p class="project-sub">Telecom Industry</p>
+          <p class="proj-org">Telecom Industry</p>
           <p>Performed Exploratory Data Analysis to identify factors influencing customer churn. Used Python for data cleaning, visualization, and insights generation.</p>
-          <div class="project-techs">
+          <div class="proj-stack">
             <span>Python</span><span>Pandas</span><span>Matplotlib</span><span>Seaborn</span>
           </div>
         </div>
 
-        <div class="project-card reveal-up delay-2">
-          <div class="project-num">02</div>
-          <div class="project-tag">Power BI · Analytics</div>
+        <div class="proj-card">
+          <div class="proj-top">
+            <span class="proj-num">02</span>
+            <div class="proj-tags"><span>Power BI</span><span>Analytics</span></div>
+          </div>
           <h3>Blinkit Data Analysis</h3>
-          <p class="project-sub">Sales Dashboard</p>
-          <p>Analyzed Blinkit sales dataset and built an interactive Power BI dashboard delivering actionable business insights for stakeholders.</p>
-          <div class="project-techs">
+          <p class="proj-org">Sales Dashboard</p>
+          <p>Analyzed Blinkit sales dataset and built an interactive Power BI dashboard for actionable business insights and stakeholder reporting.</p>
+          <div class="proj-stack">
             <span>Power BI</span><span>Python</span><span>Pandas</span><span>Excel</span>
           </div>
         </div>
 
-        <div class="project-card reveal-up delay-3">
-          <div class="project-num">03</div>
-          <div class="project-tag">Power BI · Reports</div>
+        <div class="proj-card">
+          <div class="proj-top">
+            <span class="proj-num">03</span>
+            <div class="proj-tags"><span>Power BI</span><span>Reports</span></div>
+          </div>
           <h3>Online Course Platform Analysis</h3>
-          <p class="project-sub">EdTech Insights</p>
+          <p class="proj-org">EdTech Insights</p>
           <p>Conducted analysis of online course data using Power BI. Created visual reports showing trends in enrollments and course performance.</p>
-          <div class="project-techs">
-            <span>Power BI</span><span>Data Visualization</span><span>Analysis</span>
+          <div class="proj-stack">
+            <span>Power BI</span><span>Data Visualization</span><span>EDA</span>
           </div>
         </div>
 
       </div>
-      <div class="github-link reveal-up delay-4">
-        <a href="https://github.com/Rishi-Singh-11" target="_blank" class="github-btn">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-          View GitHub Portfolio
+      <div class="gh-link">
+        <a href="https://github.com/Rishi-Singh-11" target="_blank">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          View All Projects on GitHub
         </a>
       </div>
     </div>
   </section>
 
-  <!-- YOUTUBE CONTENT -->
-  <section class="section content-section" id="content">
+  <!-- SKILLS -->
+  <section class="section alt" id="skills">
     <div class="container">
-      <div class="section-label reveal-up">Content</div>
-      <h2 class="section-title reveal-up delay-1">YouTube &amp; Outreach</h2>
-      <div class="content-grid">
-        <div class="yt-info reveal-up delay-1">
-          <div class="yt-logo">
-            <svg width="36" height="36" viewBox="0 0 24 24" fill="#FF0000"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+      <div class="sec-head">
+        <span class="tag">Skills</span>
+        <h2>Technical Skills</h2>
+      </div>
+      <div class="skills-table">
+        <div class="sk-row">
+          <div class="sk-cat">Programming</div>
+          <div class="sk-chips">
+            <span class="sk-chip primary">Python</span>
           </div>
-          <h3>@RishiSingh.rivise</h3>
-          <p>I upload educational content focused on Python and Data Science, making AI accessible to beginners through tutorials, live session recordings, and concept breakdowns.</p>
-          <ul class="yt-points">
-            <li>✦ Python programming tutorials</li>
-            <li>✦ Data Science concept breakdowns</li>
-            <li>✦ Recorded live training sessions</li>
-            <li>✦ Beginner-friendly AI introductions</li>
-          </ul>
-          <a href="https://www.youtube.com/@RishiSingh.rivise" target="_blank" class="btn-primary yt-cta">Subscribe on YouTube</a>
         </div>
-        <div class="yt-video reveal-right delay-2">
-          <div class="video-label">Featured Video</div>
-          <a href="https://youtu.be/z56iFzIVe18?si=oI17a3NcQPJ6revG" target="_blank" class="video-thumb-link">
-            <div class="video-thumb-wrap">
+        <div class="sk-row">
+          <div class="sk-cat">Data Analysis</div>
+          <div class="sk-chips">
+            <span class="sk-chip">Pandas</span>
+            <span class="sk-chip">NumPy</span>
+            <span class="sk-chip">Data Cleaning</span>
+            <span class="sk-chip">Exploratory Data Analysis (EDA)</span>
+          </div>
+        </div>
+        <div class="sk-row">
+          <div class="sk-cat">Visualization</div>
+          <div class="sk-chips">
+            <span class="sk-chip">Power BI</span>
+            <span class="sk-chip">Matplotlib</span>
+            <span class="sk-chip">Seaborn</span>
+          </div>
+        </div>
+        <div class="sk-row">
+          <div class="sk-cat">Tools</div>
+          <div class="sk-chips">
+            <span class="sk-chip">GitHub</span>
+            <span class="sk-chip">Jupyter Notebook</span>
+            <span class="sk-chip">Excel</span>
+            <span class="sk-chip">Machine Learning</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTENT / YOUTUBE -->
+  <section class="section" id="content">
+    <div class="container">
+      <div class="sec-head">
+        <span class="tag">Content & Outreach</span>
+        <h2>YouTube Channel</h2>
+      </div>
+      <div class="yt-layout">
+        <div class="yt-text">
+          <div class="yt-handle">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#FF0000"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.95C5.12 20 12 20 12 20s6.88 0 8.59-.47a2.78 2.78 0 0 0 1.96-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="#fff"/></svg>
+            @RishiSingh.rivise
+          </div>
+          <p>I create educational content around Python and Data Science — making AI accessible for absolute beginners. From recorded training sessions to step-by-step tutorials, everything is designed to help you get started with data.</p>
+          <ul class="yt-points">
+            <li>📹 Python programming & Data Science tutorials</li>
+            <li>📋 Recordings of live training sessions</li>
+            <li>🔍 Concept breakdowns for beginners</li>
+            <li>📊 Data analysis project walkthroughs</li>
+          </ul>
+          <a href="https://www.youtube.com/@RishiSingh.rivise" target="_blank" class="yt-cta">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.95C5.12 20 12 20 12 20s6.88 0 8.59-.47a2.78 2.78 0 0 0 1.96-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="#fff"/></svg>
+            Visit Channel
+          </a>
+        </div>
+
+        <div class="yt-video-col">
+          <p class="yt-vid-label">Featured Video</p>
+          <a href="https://youtu.be/z56iFzIVe18?si=oI17a3NcQPJ6revG" target="_blank" class="yt-video-card">
+            <div class="yt-thumb-wrap">
               <img
-                src="https://img.youtube.com/vi/z56iFzIVe18/maxresdefault.jpg"
+                src="https://img.youtube.com/vi/z56iFzIVe18/hqdefault.jpg"
                 alt="Rishi Singh YouTube Video"
-                class="video-thumb"
-                onerror="this.src='https://img.youtube.com/vi/z56iFzIVe18/hqdefault.jpg'"
               />
-              <div class="play-overlay">
-                <div class="play-btn">
-                  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>
-                </div>
+              <div class="yt-play-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>
               </div>
             </div>
-            <div class="video-meta">
-              <span class="vm-channel">@RishiSingh.rivise</span>
-              <span class="vm-cta">Watch Now →</span>
+            <div class="yt-vid-footer">
+              <span>@RishiSingh.rivise</span>
+              <span class="yt-watch">Watch Now →</span>
             </div>
           </a>
         </div>
@@ -428,16 +429,18 @@
   </section>
 
   <!-- INTERESTS -->
-  <section class="section interests-section">
+  <section class="section alt">
     <div class="container">
-      <div class="interests-row reveal-up">
-        <div class="int-item">🎸 Guitar</div>
-        <div class="int-divider">·</div>
-        <div class="int-item">📖 Technology Books</div>
-        <div class="int-divider">·</div>
-        <div class="int-item">🧑‍🏫 Education</div>
-        <div class="int-divider">·</div>
-        <div class="int-item">🌐 Self-Development</div>
+      <div class="sec-head">
+        <span class="tag">Personal</span>
+        <h2>Interests</h2>
+      </div>
+      <div class="int-row">
+        <div class="int-item"><span>🎸</span>Playing Guitar</div>
+        <div class="int-item"><span>📖</span>Technology Books</div>
+        <div class="int-item"><span>🧑‍🏫</span>Teaching</div>
+        <div class="int-item"><span>🌱</span>Self-Development</div>
+        <div class="int-item"><span>🤖</span>AI Research</div>
       </div>
     </div>
   </section>
@@ -445,14 +448,20 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer-inner">
-      <div class="footer-brand">RS<span class="dot">.</span></div>
-      <p class="footer-copy">© 2025 Rishi Singh · Varanasi, India</p>
+      <div class="footer-left">
+        <div class="footer-brand">Rishi Singh<span>.</span></div>
+        <p>AI & Data Science Educator · Varanasi, India</p>
+      </div>
       <div class="footer-links">
         <a href="https://linkedin.com/in/ds-rishisingh" target="_blank">LinkedIn</a>
         <a href="https://github.com/Rishi-Singh-11" target="_blank">GitHub</a>
         <a href="https://www.youtube.com/@RishiSingh.rivise" target="_blank">YouTube</a>
-        <a href="assets/docs/rishi-resume.pdf" download>Resume PDF</a>
+        <a href="mailto:officialrishisingh.ds@gmail.com">Email</a>
+        <a href="assets/docs/rishi-resume.pdf" download>Download PDF</a>
       </div>
+    </div>
+    <div class="footer-copy">
+      <div class="container">© 2025 Rishi Singh · All rights reserved</div>
     </div>
   </footer>
 
