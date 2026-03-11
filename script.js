@@ -3,54 +3,56 @@ document.addEventListener('DOMContentLoaded', () => {
   const isMobile = () => window.innerWidth <= 768 || 'ontouchstart' in window;
 
   /* ─────────────────────────────────────────
-     CUSTOM CURSOR (desktop only)
+     CUSTOM CURSOR — dot + lagging ring + trail
   ───────────────────────────────────────── */
-  const outer  = document.getElementById('cursor-outer');
-  const dot    = document.getElementById('cursor-dot');
-  const trail  = document.getElementById('cursor-trail');
+  const outer = document.getElementById('cursor-outer');
+  const dot   = document.getElementById('cursor-dot');
+  const trail = document.getElementById('cursor-trail');
 
-  let mouseX = window.innerWidth / 2, mouseY = window.innerHeight / 2;
-  let outerX  = mouseX, outerY  = mouseY;
-  let trailX  = mouseX, trailY  = mouseY;
+  let mX = window.innerWidth / 2, mY = window.innerHeight / 2;
+  let rX = mX, rY = mY;   // ring (lagging)
+  let tX = mX, tY = mY;   // trail (most lagging)
 
   if (!isMobile() && outer) {
+    // Dot follows mouse instantly via CSS (set directly)
     document.addEventListener('mousemove', e => {
-      mouseX = e.clientX;
-      mouseY = e.clientY;
-      dot.style.left = mouseX + 'px';
-      dot.style.top  = mouseY + 'px';
+      mX = e.clientX;
+      mY = e.clientY;
+      dot.style.left = mX + 'px';
+      dot.style.top  = mY + 'px';
     });
 
-    // Smooth cursor follow
-    function rafCursor() {
-      outerX += (mouseX - outerX) * 0.13;
-      outerY += (mouseY - outerY) * 0.13;
-      trailX += (mouseX - trailX) * 0.07;
-      trailY += (mouseY - trailY) * 0.07;
+    // Ring + trail use RAF smooth lerp
+    (function raf() {
+      rX += (mX - rX) * 0.14;
+      rY += (mY - rY) * 0.14;
+      tX += (mX - tX) * 0.07;
+      tY += (mY - tY) * 0.07;
 
-      outer.style.left = outerX + 'px';
-      outer.style.top  = outerY + 'px';
-      trail.style.left = trailX + 'px';
-      trail.style.top  = trailY + 'px';
-      requestAnimationFrame(rafCursor);
-    }
-    rafCursor();
+      outer.style.left = rX + 'px';
+      outer.style.top  = rY + 'px';
+      trail.style.left = tX + 'px';
+      trail.style.top  = tY + 'px';
+      requestAnimationFrame(raf);
+    })();
 
-    // Hover state on interactive elements
-    const hoverEls = document.querySelectorAll(
-      'a, button, .proj-card, .sk-chip, .ap-item, .edu-row, .int-item, .soc-btn, .nav-btn, .tl-card'
-    );
-    hoverEls.forEach(el => {
-      el.addEventListener('mouseenter', () => document.body.classList.add('c-hover'));
-      el.addEventListener('mouseleave', () => document.body.classList.remove('c-hover'));
-    });
+    // Hover expand on interactive elements
+    document.querySelectorAll('a, button, .proj-card, .sk-chip, .ap-item, .edu-row, .int-item, .tl-card, .nav-btn, .soc-btn, .btn-fill, .btn-line')
+      .forEach(el => {
+        el.addEventListener('mouseenter', () => document.body.classList.add('c-hover'));
+        el.addEventListener('mouseleave', () => document.body.classList.remove('c-hover'));
+      });
 
     document.addEventListener('mousedown', () => document.body.classList.add('c-click'));
     document.addEventListener('mouseup',   () => document.body.classList.remove('c-click'));
 
-    // Hide cursor when leaving window
-    document.addEventListener('mouseleave', () => { outer.style.opacity = '0'; dot.style.opacity = '0'; trail.style.opacity = '0'; });
-    document.addEventListener('mouseenter', () => { outer.style.opacity = '1'; dot.style.opacity = '1'; trail.style.opacity = '1'; });
+    // Fade out when leaving viewport
+    document.addEventListener('mouseleave', () => {
+      [outer, dot, trail].forEach(el => el.style.opacity = '0');
+    });
+    document.addEventListener('mouseenter', () => {
+      [outer, dot, trail].forEach(el => el.style.opacity = '1');
+    });
   }
 
   /* ─────────────────────────────────────────
